@@ -11,7 +11,7 @@ class Awssso < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Darwin_x86_64.tar.gz"
-      sha256 "5b4d4e84cd85422cf6a661633eb9f7ee9162c483c1b0745ae6cd41eb407666b3"
+      sha256 "6b1eb6b436b867130243581949388f4f8fbc8b78d6ba91439bb2c628ed09a84b"
 
       def install
         bin.install "awssso"
@@ -19,7 +19,7 @@ class Awssso < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Darwin_arm64.tar.gz"
-      sha256 "b0c3a79697df2b614eb5ff9d946516e071263a64053c366452e4811b7f0dd541"
+      sha256 "7d46ba1466eb808fa16dc734a8e390bceb1e4173ce06db497ce57fa86b69d55e"
 
       def install
         bin.install "awssso"
@@ -31,7 +31,7 @@ class Awssso < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Linux_x86_64.tar.gz"
-        sha256 "a99edf9b9eeb36f6afc2db52766c97311ba1bc666252d4e0a034a2a2a5ea1597"
+        sha256 "affb2572501069884eb80aa107f415f94f76e7fd79dd2a95377bf7f9dc09fa0d"
 
         def install
           bin.install "awssso"
@@ -41,7 +41,7 @@ class Awssso < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Linux_arm64.tar.gz"
-        sha256 "c42b8f8de8db5382dd83d46f0d29c60c151ebe4b2edc87eb044566867fda76b9"
+        sha256 "b422d4596027795cda9df9280a7feb244dee0a314829682a53762df9bb6eba6a"
 
         def install
           bin.install "awssso"
