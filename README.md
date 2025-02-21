@@ -28,6 +28,8 @@ outside of search.
 
 ## What packages are available?
 
-Package | Install
-|-|-
-| [remote-shell](https://github.com/webdestroya/remote-shell-client/) | `brew install webdestroya/tap/remote-shell`
+| Package | Install |
+|-|-|
+| [remote-shell](https://github.com/webdestroya/remote-shell-client/) | `brew install webdestroya/tap/remote-shell` |
+| [aws-sso](https://github.com/webdestroya/aws-sso/) | `brew install webdestroya/tap/awssso` |
+| [phonelookup](https://github.com/webdestroya/phonelookup/) | `brew install webdestroya/tap/phonelookup` |
