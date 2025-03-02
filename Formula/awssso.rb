@@ -5,13 +5,13 @@
 class Awssso < Formula
   desc "Writes credentials for AWS SSO'd accounts so that older applications can use them."
   homepage "https://github.com/webdestroya/aws-sso"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Darwin_x86_64.tar.gz"
-      sha256 "1bd6a3b1044a122e96536d4ac19c5e426cd1f111372d23b7dd7f1c618083862b"
+      url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.1/awssso_Darwin_x86_64.tar.gz"
+      sha256 "14528008d1af5fe24c04f489d35ce3412b6944f1acaf685dc931b5b9b535b05c"
 
       def install
         bin.install "awssso"
@@ -21,8 +21,8 @@ class Awssso < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Darwin_arm64.tar.gz"
-      sha256 "36d726704c6c64ee034450e1e822fba48ef85b7a573554e11c0ce80985aca78a"
+      url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.1/awssso_Darwin_arm64.tar.gz"
+      sha256 "2daa99da632428d2727f7ff4bcd8a0b9d1350597b09c000d9b12397edb456cd1"
 
       def install
         bin.install "awssso"
@@ -36,8 +36,8 @@ class Awssso < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Linux_x86_64.tar.gz"
-        sha256 "7ca7bad03c39b0a34310910d366ac3378f3ac2afe9cbf6a5cd267cb3a18c9cb9"
+        url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.1/awssso_Linux_x86_64.tar.gz"
+        sha256 "df7e8362f2fec17fdee75489378f6ea1f06f9e3c5bd1e93dcd8ddcf1e5ef9018"
 
         def install
           bin.install "awssso"
@@ -49,8 +49,8 @@ class Awssso < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Linux_arm64.tar.gz"
-        sha256 "2b7e180f1f6bd7c2afbf5750e008eb43ce189596938677c456f16149d280659b"
+        url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.1/awssso_Linux_arm64.tar.gz"
+        sha256 "8cfa762ce710935040be4a8069bc89ab329cc5f5d204080f6bf4b9c804f85f8f"
 
         def install
           bin.install "awssso"
