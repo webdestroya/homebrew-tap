@@ -5,24 +5,30 @@
 class Awssso < Formula
   desc "Writes credentials for AWS SSO'd accounts so that older applications can use them."
   homepage "https://github.com/webdestroya/aws-sso"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Darwin_x86_64.tar.gz"
-      sha256 "6b1eb6b436b867130243581949388f4f8fbc8b78d6ba91439bb2c628ed09a84b"
+      url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Darwin_x86_64.tar.gz"
+      sha256 "1bd6a3b1044a122e96536d4ac19c5e426cd1f111372d23b7dd7f1c618083862b"
 
       def install
         bin.install "awssso"
+        bash_completion.install "completions/awssso.bash" => "awssso"
+        fish_completion.install "completions/awssso.fish" => "awssso.fish"
+        zsh_completion.install "completions/awssso.zsh" => "_awssso"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Darwin_arm64.tar.gz"
-      sha256 "7d46ba1466eb808fa16dc734a8e390bceb1e4173ce06db497ce57fa86b69d55e"
+      url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Darwin_arm64.tar.gz"
+      sha256 "36d726704c6c64ee034450e1e822fba48ef85b7a573554e11c0ce80985aca78a"
 
       def install
         bin.install "awssso"
+        bash_completion.install "completions/awssso.bash" => "awssso"
+        fish_completion.install "completions/awssso.fish" => "awssso.fish"
+        zsh_completion.install "completions/awssso.zsh" => "_awssso"
       end
     end
   end
@@ -30,21 +36,27 @@ class Awssso < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Linux_x86_64.tar.gz"
-        sha256 "affb2572501069884eb80aa107f415f94f76e7fd79dd2a95377bf7f9dc09fa0d"
+        url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Linux_x86_64.tar.gz"
+        sha256 "7ca7bad03c39b0a34310910d366ac3378f3ac2afe9cbf6a5cd267cb3a18c9cb9"
 
         def install
           bin.install "awssso"
+          bash_completion.install "completions/awssso.bash" => "awssso"
+          fish_completion.install "completions/awssso.fish" => "awssso.fish"
+          zsh_completion.install "completions/awssso.zsh" => "_awssso"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/webdestroya/aws-sso/releases/download/v1.0.1/awssso_Linux_arm64.tar.gz"
-        sha256 "b422d4596027795cda9df9280a7feb244dee0a314829682a53762df9bb6eba6a"
+        url "https://github.com/webdestroya/aws-sso/releases/download/v1.1.0/awssso_Linux_arm64.tar.gz"
+        sha256 "2b7e180f1f6bd7c2afbf5750e008eb43ce189596938677c456f16149d280659b"
 
         def install
           bin.install "awssso"
+          bash_completion.install "completions/awssso.bash" => "awssso"
+          fish_completion.install "completions/awssso.fish" => "awssso.fish"
+          zsh_completion.install "completions/awssso.zsh" => "_awssso"
         end
       end
     end
