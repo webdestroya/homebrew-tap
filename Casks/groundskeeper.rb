@@ -3,7 +3,7 @@ cask "groundskeeper" do
   name "groundskeeper"
   desc "Generic database migrations"
   homepage "https://github.com/webdestroya/groundskeeper"
-  version "0.0.4"
+  version "0.0.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "groundskeeper" do
   on_macos do
     on_intel do
       url "https://github.com/webdestroya/groundskeeper/releases/download/v#{version}/groundskeeper_darwin_amd64.tar.gz"
-      sha256 "b9b98bfc9831d1e6ffdaf3ef5dd4f4aefec7118352eb1a47804463443c76050b"
+      sha256 "77f83eb0ed3e6c13ea0585486ea9c522ef3a809a1985f9849a22f30caecb00ad"
     end
     on_arm do
       url "https://github.com/webdestroya/groundskeeper/releases/download/v#{version}/groundskeeper_darwin_arm64.tar.gz"
-      sha256 "96f6e4f24299c669c67b2c7402566e301aadc99eccb3ef97b512dfc5ce2acba4"
+      sha256 "187d6beffa9b05ade8451cfdcd4e35cb040dad2f1dea17ad98ecd8f2396d9ad1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/webdestroya/groundskeeper/releases/download/v#{version}/groundskeeper_linux_amd64.tar.gz"
-      sha256 "b8026bba889c499d4c38253def6559c9303655e0da17006663cf136d69e7d7ee"
+      sha256 "2b6cb7acd9c2f9e74a8154dfd51cb3fea428ac6c12ca4a192703b839ef6c92fb"
     end
     on_arm do
       url "https://github.com/webdestroya/groundskeeper/releases/download/v#{version}/groundskeeper_linux_arm64.tar.gz"
-      sha256 "a68a53ff71a34a9bdce917720b598e9dcaf421dd8227d2e18c7619059f6cf26e"
+      sha256 "69d3f09f57a18900d4fafbea159ce0493bf09b610ed89aa943b092c54473f10f"
     end
   end
 
