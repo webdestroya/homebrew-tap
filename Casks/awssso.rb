@@ -3,7 +3,7 @@ cask "awssso" do
   name "awssso"
   desc "Writes credentials for AWS SSO'd accounts so that older applications can use them."
   homepage "https://github.com/webdestroya/aws-sso"
-  version "1.2.0"
+  version "1.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,27 +14,27 @@ cask "awssso" do
   on_macos do
     on_intel do
       url "https://github.com/webdestroya/aws-sso/releases/download/v#{version}/awssso_Darwin_x86_64.tar.gz"
-      sha256 "55611e129b88d77a9c408a25dfdf1ffc04a12b755d90a4463ed2fd2ee28d2ab3"
+      sha256 "4301c4b9e02e5c957f61bb71d539d5d9928f0b6a01b40aa6eece9896b36fe456"
     end
     on_arm do
       url "https://github.com/webdestroya/aws-sso/releases/download/v#{version}/awssso_Darwin_arm64.tar.gz"
-      sha256 "d61a47635d69bea633515d636fdbb42bf310bf46c868b1573e8b765bda34e12d"
+      sha256 "0e1e2b7bd362751147eb4429c59a4a0ff4dee3785e451ddfd50dc59c7fe6bf95"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/webdestroya/aws-sso/releases/download/v#{version}/awssso_Linux_x86_64.tar.gz"
-      sha256 "31cca4af0a79faee848a0fcec6d365f159eaea29e97d5503478ad2f93da059de"
+      sha256 "15e297e587362a1586c5aaf1c52850ba29d3e7402aa6fe0b42b28991bbc3430e"
     end
     on_arm do
       url "https://github.com/webdestroya/aws-sso/releases/download/v#{version}/awssso_Linux_arm64.tar.gz"
-      sha256 "1b1ec828342c384c249a226a4f0082a4ceaad9e8f7e60d4f618c5c8ae86e4688"
+      sha256 "d13841b1cb5486c483248f65263393784e655daa73511384e4cf366cbd069edf"
     end
   end
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/groundskeeper"]
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/awssso"]
   end
 
   # No zap stanza required
